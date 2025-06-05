@@ -1,0 +1,141 @@
+{
+  "medecins": [
+    {
+      "id": 1,
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "email": "jean.dupont@example.com",
+      "mot_de_passe": "$2a$10$xyz",
+      "specialite": "Généraliste",
+      "patients": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "nom": "Lemoine",
+      "prenom": "Marie",
+      "email": "marie.lemoine@example.com",
+      "mot_de_passe": "$2a$10$abc",
+      "specialite": "Cardiologue",
+      "patients": [
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "nom": "Durand",
+      "prenom": "Pierre",
+      "email": "pierre.durand@example.com",
+      "mot_de_passe": "$2a$10$def",
+      "specialite": "Dermatologue",
+      "patients": []
+    },
+    {
+      "id": 1741882301305,
+      "nom": "tazi",
+      "prenom": "khalid",
+      "email": "khalid@gmail.com",
+      "mot_de_passe": "123456",
+      "specialite": "oftalmologue",
+      "patients": []
+    }
+  ],
+  "medicaments": [
+    {
+      "id": 1,
+      "nom_commercial": "Doliprane",
+      "nom_dci": "Paracétamol",
+      "forme": "Comprimé",
+      "dosage": "500mg"
+    },
+    {
+      "id": 2,
+      "nom_commercial": "Spasfon",
+      "nom_dci": "Phloroglucinol",
+      "forme": "Comprimé",
+      "dosage": "80mg"
+    },
+    {
+      "id": 3,
+      "nom_commercial": "Ibuprofène",
+      "nom_dci": "Ibuprofène",
+      "forme": "Gélule",
+      "dosage": "400mg"
+    }
+  ],
+  "patients": [
+    {
+      "numero_dossier": 1,
+      "nom": "Martin",
+      "prenom": "Sophie",
+      "date_naissance": "1985-07-12",
+      "adresse": "12 rue des Lilas, Paris",
+      "telephone": "0123456789",
+      "medecin_id": 1,
+      "historique_ordonnances": []
+    },
+    {
+      "numero_dossier": 2,
+      "nom": "Lemoine",
+      "prenom": "Pierre",
+      "date_naissance": "1990-03-25",
+      "adresse": "45 avenue des Champs, Paris",
+      "telephone": "0987654321",
+      "medecin_id": 1,
+      "historique_ordonnances": []
+    },
+    {
+      "numero_dossier": 3,
+      "nom": "Durand",
+      "prenom": "Claire",
+      "date_naissance": "1978-11-03",
+      "adresse": "78 rue de la Paix, Lyon",
+      "telephone": "0147258369",
+      "medecin_id": 2,
+      "historique_ordonnances": []
+    }
+  ],
+  "ordonnances": [
+    {
+      "id": 1,
+      "date_visite": "2025-03-13",
+      "medecin_id": 1,
+      "patient_id": 1,
+      "medicaments": [
+        {
+          "medicament_id": 1,
+          "dosage": "500mg",
+          "frequence": "3 fois par jour"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date_visite": "2025-03-14",
+      "medecin_id": 2,
+      "patient_id": 2,
+      "medicaments": [
+        {
+          "medicament_id": 2,
+          "dosage": "80mg",
+          "frequence": "2 fois par jour"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "date_visite": "2025-03-15",
+      "medecin_id": 3,
+      "patient_id": 3,
+      "medicaments": [
+        {
+          "medicament_id": 3,
+          "dosage": "400mg",
+          "frequence": "1 fois par jour"
+        }
+      ]
+    }
+  ]
+}

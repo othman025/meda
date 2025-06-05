@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-image: url('../images/slide-ordo3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 2; /* Place the card above the overlay */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.submitBtn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  background-color: #6c757d;
+}
+
+.forgotPassword {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+/* Styles pour les champs en arabe */
+.arabicInput {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1em;
+  background-color: #f8f9fa;
+  border: 1px solid #28a745;
+}
+
+.arabicNote {
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #343a40;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 5px;
+}
